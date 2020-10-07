@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Estonia COVID Stats</title>
+</head>
+<body>
+    <div class="container" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <a class="navbar-brand" href="#">Estonia COVID Stats</a>
+        </nav>
+        <div class="row" style="margin: 0;">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"> </th>
+                    <th scope="col"><%= corona.firstDay %></th>
+                    <th scope="col"><%= corona.lastDay %></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">New daily cases</th>
+                    <td><%= corona.firstDayData.new_daily_cases %></td>
+                    <td><%= corona.lastDayData.new_daily_cases %></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total cases</th>
+                    <td><%= corona.firstDayData.total_cases %></td>
+                    <td><%= corona.lastDayData.total_cases %></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total recoveries</th>
+                    <td><%= corona.firstDayData.total_recoveries %></td>
+                    <td><%= corona.lastDayData.total_recoveries %></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">New daily deaths</th>
+                    <td><%= corona.firstDayData.new_daily_deaths %></td>
+                    <td><%= corona.lastDayData.new_daily_deaths %></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total deaths</th>
+                    <td><%= corona.firstDayData.total_deaths %></td>
+                    <td><%= corona.lastDayData.total_deaths %></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
+    
